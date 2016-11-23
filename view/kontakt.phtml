@@ -1,0 +1,33 @@
+<div class="left">
+	<table>
+		<tr>
+			<td><img src="images/obalka.png" class="kontakt" alt="Adresa"></td>
+			<td>Česká 297, Most 43401</td>
+		</tr>
+		<tr>
+			<td><a href="mailto:horak.tomas%40mujmail.cz" title="Napište mi"><img src="images/mail.png" class="kontakt" alt="E-mail"></a></td>
+			<td>horak.tomas&#064;mujmail.cz</td>
+		</tr>
+		<tr>
+			<td><img src="images/phone.png" class="kontakt" alt="Telefon"></td>
+			<td>+420 737 337 524</td>
+		</tr>
+		<tr>
+			<td><a href="skype:Tomáš Horák?chat" title="Napište mi"><img src="images/skype.png" class="kontakt" alt="Skype"></a></td>
+			<td>Tomáš Horák</td>
+		<tr>
+	</table>
+</div>
+
+<div class="right">
+	<form method="post">
+		<p class="form">Váš E-mail:</p>
+		<input type="email" name="email" required="required" value="<?php if (isset($_POST['email'])) echo(htmlspecialchars($_POST['email'])); ?>" /><br />
+		<p class="form">Zadejte aktuální rok:</p>
+		<input type="text" name="year" required="required">
+		<p class="form">Vaše zpráva</p>
+		<textarea name="text"><?php if (isset($_POST['text'])) echo(htmlspecialchars($_POST['text'])); ?></textarea><br />
+			<input type="submit" value="Odeslat zprávu" />
+	</form>
+ </div>
+ <div class="clear"></div>
